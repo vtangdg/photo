@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title><%= title %></title>
+	<link rel="stylesheet" href="/stylesheets/style.css" />
+</head>
+<body>
+	<h1>photos</h1>
+	<div id="photos">
+	  <!-- ejs用〈% code %〉执行普通的js -->
+		<% photos.forEach(function(photo) { %>
+			<div class="photo">
+				<h2><%= photo.name %></h2>
+				<a href="/photo/<%= photo.id%>/download">
+					<img src="/photos/<%= photo.path%>" alt="pic" />
+				</a>
+			</div>
+		<% }); %>
+	</div>
+<!-- javascript -->
+<script>
+	
+</script>
+</body>
+</html>

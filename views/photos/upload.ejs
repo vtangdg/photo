@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title><%= title %></title>
+	<link rel="stylesheet" href="/stylesheets/style.css" />
+</head>
+<body>
+	<h1><%= title %></h1>
+	<p>上传照片：</p>
+	<form method="post" action="/upload" enctype="multipart/form-data">
+		<p><input type="file" name="photo"/></p>
+		<p><input type="submit" value="Upload" /></p>
+	</form>
+</body>
+</html>
